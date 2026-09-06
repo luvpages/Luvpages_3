@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Things I Wish I Could Say 🧸</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Georgia,serif;background:linear-gradient(160deg,#fff5f7,#ffe0e9,#fff4ec);color:#633c48;padding:25px;text-align:center}.wrap{max-width:700px;margin:auto}.wrap img{width:150px;height:150px;object-fit:contain;animation:float 3s ease-in-out infinite}@keyframes float{50%{transform:translateY(-10px)}}h1{color:#a64d68;font-size:32px}.subtitle{font-size:17px}.flowers{font-size:28px}.messages{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-top:25px}.flower{background:#fff;border:0;border-radius:22px;padding:25px 12px;font-size:38px;cursor:pointer;box-shadow:0 8px 25px #b45d7220;transition:.3s}.flower:hover{transform:translateY(-6px) rotate(2deg)}.flower span{display:block;font-family:Georgia,serif;font-size:15px;color:#633c48;margin-top:12px;line-height:1.5}.hidden{display:none}.btn{display:inline-block;margin-top:25px;padding:14px 27px;border-radius:30px;background:#c76580;color:white;text-decoration:none}
+@media(max-width:500px){.messages{grid-template-columns:1fr 1fr}.flower{padding:20px 8px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="flowers">🌸 🌷 🌹 🌷 🌸</div>
+<img src="images/teddy1.png" alt="Teddy bear">
+<h1>Things I Wish I Could Say 🧸</h1>
+<p class="subtitle">Tap each flower… there's something I want you to know.</p>
+<div class="messages">
+<button class="flower" onclick="show(1)">🌹<span id="m1" class="hidden">I never wanted to hurt you.</span></button>
+<button class="flower" onclick="show(2)">🌷<span id="m2" class="hidden">I'm sorry for letting my actions speak louder than my feelings.</span></button>
+<button class="flower" onclick="show(3)">🌸<span id="m3" class="hidden">You matter to me more than my pride ever could.</span></button>
+<button class="flower" onclick="show(4)">💐<span id="m4" class="hidden">I'll learn from this and do better.</span></button>
+</div>
+<a class="btn" href="letter.html">One Last Thing… 💌</a>
+</div>
+<script>
+function show(n){document.getElementById("m"+n).classList.remove("hidden")}
+</script>
+</body>
+</html>
